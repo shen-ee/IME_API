@@ -50,6 +50,6 @@ text = newstr
 data = {"text":text}
 ret = requests.post(url, data=data)
 res = ret.json()['result']
-
+print(res)
 
 show_result(res,purestr)
